@@ -1,0 +1,41 @@
+
+
+
+11.2
+Collection 인터페이스
+Collection 인터페이스 내에는 List와 Set 인터페이스가 존재
+List : 순차적인 자료를 관리하는데 사용
+Set: 수학 시간에 배운 집합을 의미한다. 
+
+
+List 인터페이스
+
+
+
+
+
+Set 인터페이스 
+순서와 상관없이 중복을 허용하지 않는 경우에 사용한다.
+Set 인터페이스는 HashSet와 TreeSet이 있다. 
+HashSet 클래스 사용법
+
+import java.util.HashSet;
+
+HashSet<String> hashset=new HashSet<Stirng>();
+hashset.add("홍연의");
+
+
+
+
+
+
+
+Map 인터페이스
+하나가 아닌 쌍으로 되어있는 자료를 관리하는 메서드들이 선언되어있다. 
+key-value쌍 키값은 중복될수없다. 
+- 기본적으로 검색용 자료구조이다.
+- 어떤 key 값을 알고 있을때 value를 찾기 위한 자료구조이다. 
+
+HashMap map=new HashMap();
+map.put(K key,V value) value값을 map 에 넣는다. 
+map.remove(key) key가 있는 경우 삭제한다. 
