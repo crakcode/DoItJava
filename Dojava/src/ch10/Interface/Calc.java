@@ -7,7 +7,7 @@ package ch10.Interface;
 public interface Calc {
 
 	
-	//인터페이스에[서 선언한 변수는 컴파일 과정에 상수로 변환됨
+	//인터페이스에서 선언한 변수는 컴파일 과정에 상수로 변환됨
 	double PI=3.14;
 	int ERROR=-999999999;
 	

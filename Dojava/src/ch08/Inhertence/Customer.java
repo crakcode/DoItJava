@@ -1,4 +1,4 @@
-package ch8.inheritance;
+package ch08.Inhertence;
 
 public class Customer {
 	public int getCId() {

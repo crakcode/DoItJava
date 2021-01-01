@@ -1,4 +1,4 @@
-package doitjava.chapter6;
+package ch06.Class2;
 
 
 class Person{

@@ -1,4 +1,4 @@
-package ch8.inheritance;
+package ch08.Inhertence;
 
 public class VIPCustomer extends Customer{
 	private int agentID; //vip 전용상담원

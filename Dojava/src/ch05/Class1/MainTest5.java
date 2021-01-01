@@ -1,4 +1,4 @@
-package doitjava.chapter5;
+package ch05.Class1;
 
 public class MainTest5 {
 	public static void main (String[] args) {
