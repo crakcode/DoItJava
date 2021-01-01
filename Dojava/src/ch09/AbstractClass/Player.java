@@ -6,10 +6,10 @@ public class Player {
 	public PlayerLevel level;
 	
 	
-	public Player(){
-		level=new BeginnerLevel();
-		level.showLevelMessage();
-	}
+//	public Player(){
+//		level=new BeginnerLevel();
+//		level.showLevelMessage();
+//	}
 	
 	void getLevel() {
 		System.out.println(level);

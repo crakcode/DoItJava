@@ -14,8 +14,8 @@ public class test09 {
 		AiCar ac=new AiCar();
 		
 		ac.run();
+		
 		System.out.println("-------ÀÏ¹ÝÂ÷-----");
-
 		ManualCar mc=new ManualCar();
 		mc.run();
 		
