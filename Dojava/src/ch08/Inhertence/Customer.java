@@ -39,6 +39,7 @@ public class Customer {
 	public Customer() {
 		CGrade="SILVER";
 		bRatio=0.01;
+		System.out.println("Customer »ý¼º");
 		
 	}
 	

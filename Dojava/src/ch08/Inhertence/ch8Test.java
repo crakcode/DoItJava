@@ -18,6 +18,10 @@ public class ch8Test {
 	System.out.println(v1.showCustomerInfo());
 	
 	
+	
+	VIPCustomer v2=new VIPCustomer(1000,"¿Ã√¢º∑","VIP");
+	System.out.println(v2.showCustomerInfo());
+	
 	}
 	
 	

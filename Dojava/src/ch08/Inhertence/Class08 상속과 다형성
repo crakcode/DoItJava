@@ -1,0 +1,132 @@
+8. 상속과 다형성
+
+- 상속이란
+- 상소겡서 클래스 생성과 형변환
+- 메서드 오버라이딩
+- 다형성
+- 다형성 활용하기
+- 다운캐스팅과 instance of 
+
+
+
+8-1. 상속이란.
+부모가 자식에게 상속하듯이 클래스를 상속하는것을 의미한다. 
+B->A : B가 A클래스를 상속받는다. 즉 A를 부모 클래스 B를 자식 클래스라고 정의한다. 
+
+상속을 나타낼때 extends 를 이용ㄹ해서 나타낸다. 
+class B extends A{
+
+}
+
+Customer.java/ vipCustomer
+
+customer의 값을 vipCustomer 가 상속받는다.
+즉 vipcustomer에서 겹치는 부분을 상속받아서 처리한다. 
+
+
+할인율과 CGrade를 VipCustomer에 맞게 설정하여 처리한다.
+
+
+8-2. 상속에서 클래스 생성과 형변환
+
+-super는  부모를 부르는 예약어이다.
+B->A: dlfEo
+즉 VIPCustomer클래스에서 super();를 입력하면 
+상위클래스의 Customer가 자동으로 호출됨
+	public VIPCustomer() {
+		super();
+		CGrade="VIP"; //상위 클래스에서 가져오기 위해 public 선언
+		bRatio=0.05;
+		saleRatio=0.1;
+	}
+즉 여기서 super를 쓰게 되면 vip가 상속하는 Customer 가 상속됨
+super를 통해서 상속한 클래스의 생성자를 호출할수있다 .
+
+
+- 상위 클래스로 묵시적 클래스 형변환
+Customer vc=new ViPCustomer();
+vc는 클래스의 자료형이 Customer 이고 VIPCustomer는 생성자이다. 
+하지만 하위 클래스는 상위클래스보다 더 많은것이 구현되어있기 떄문에
+하위클래스의 모든것을 이용할수없다 .그래서 Customer에 있는것만 사용이가능하다. 
+
+
+8-3. 메서드 오버라이딩
+할인율을 계산할떄 calcPrice를 이용하는데 VIP는 새롭게 calcPrice를 정의할 필요가 있다
+
+@Override
+public int calcPrice(int price){
+
+}
+
+이런식으로  Override하여서 재정의하여 처리한다. 
+
+
+
+
+--어노테이션: 영어로는 주석이라는 의미,컴파일러에게 정보를 제공해주는 역할
+
+
+
+
+
+
+8-4. 다형성 테스트 
+다형성이란 하나의 코드가 여러 자료형으로 구현되어 실행하는것을 말한다. 
+
+Animal 클래스 
+human, Tiger, eagle이 상속받음
+
+
+
+public class AnimalTest{
+	public static void main(String[] args) {
+		AnimalTest aTest=new AnimalTest();
+		aTest.moveAnimal(new Human());
+		aTest.moveAnimal(new Tiger());
+		aTest.moveAnimal(new Eagle());
+		
+	}
+	
+	public void moveAnimal(Animal animal) {
+		animal.move();
+	}
+	
+즉 Animal ani=new Human();
+으로 Animal에서 상속받은 클래스가 매개변수로 모두 넘어오면서 
+Aniaml로 형변환되기떔누에 매개변수의 메서드가 사용된다. 
+
+
+- 다형성의 장점
+새로운 동물도 Animal 클래스를 상속받아 구현하면 animal 로
+쉽게 관리가 가능하다.  상위클래스에서 콩통부분의 메서드를 제공하고
+하위클래스에서는 그에 기반한 추가 요소를 덧붙여 구현하면 유지보수도 편리하다 . 
+
+
+8-6 다운 캐스팅과 instance of 
+ㄷ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
