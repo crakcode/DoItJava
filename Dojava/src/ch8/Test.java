@@ -30,7 +30,7 @@ public class Test {
 		zergling z1=new zergling();
 		glrat g1=new glrat();
 		System.out.println(m1.atPoint);
-		m1.attack(z1);
+		m1.attack(z1,m1.atPoint);
 		System.out.println(z1.hp);
 		
 	}

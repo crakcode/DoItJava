@@ -11,12 +11,12 @@ class zergling extends Unit{
 	
 }
 class marin extends Unit{
-	int hp=15;
+	int hp=10;
 	int atPoint=3;
 	
 }
 class glrat extends Unit{
-	int hp=20;
+	int hp=10;
 	int atPoint=22;
 	
 }

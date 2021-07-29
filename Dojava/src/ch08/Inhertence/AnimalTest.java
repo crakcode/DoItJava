@@ -13,17 +13,15 @@ class Human extends Animal{
 		System.out.println("사람이 걷는다.");
 	}
 }
+
 class Tiger extends Animal{
-
-
 	public void move() {
 		System.out.println("사자가 움직인다.");
 	}
 	
 }
+
 class Eagle extends Animal{
-
-
 	public void move() {
 		System.out.println("독수리가 움직인다.");
 	}
